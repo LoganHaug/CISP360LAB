@@ -21,7 +21,7 @@ int main(){
         cout << "Please enter a positive non-zero radius";
         return 0;
     }
-    cout << "The approximate volume of a sphere with radius " << radius << " is: " << (4.0/3.0) * (3.141592) * pow(radius, 3) << "\n";
+    cout << "The approximate volume of a sphere with radius " << radius << " is: " << (4.0/3.0) * 3.141592 * pow(radius, 3) << "\n";
     cout << "The approximate surface area of a sphere with radius " << radius << " is: " << 4.0 * 3.141592 * pow(radius, 2) << "\n";
     return 0;
 }
