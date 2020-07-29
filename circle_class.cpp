@@ -1,3 +1,4 @@
+// Written by Logan N. Haug
 #include <iostream>
 using namespace std;
 
@@ -47,5 +48,4 @@ int main() {
     cout << "The Circle's Area: " << my_circle.getArea() << endl;
     cout << "The Circle's Diameter: " << my_circle.getDiameter() << endl;
     cout << "The Circle's Circumference: " << my_circle.getCircumference() << endl;
-    
 }
