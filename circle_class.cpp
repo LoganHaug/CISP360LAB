@@ -1,5 +1,6 @@
 // Written by Logan N. Haug
 #include <iostream>
+#include <string>
 using namespace std;
 
 class circle {
@@ -34,17 +35,19 @@ class circle {
 
 int main() {
     bool got_radius = false;
-    double user_radius;
+    string user_radius;
+    double converted_radius;
     do {
         cout << "Enter a radius length: ";
         try {
-            cin >> user_radius;
+            getline(cin, user_radius);
+            converted_radius = stod(user_radius);
             got_radius = true;
         } catch (...) {
             cout << "That was an invalid radius" << endl;
         }
     } while (!got_radius);
-    circle my_circle = circle(user_radius);
+    circle my_circle = circle(converted_radius);
     cout << "The Circle's Area: " << my_circle.getArea() << endl;
     cout << "The Circle's Diameter: " << my_circle.getDiameter() << endl;
     cout << "The Circle's Circumference: " << my_circle.getCircumference() << endl;
